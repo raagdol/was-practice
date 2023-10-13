@@ -21,7 +21,7 @@ public class QueryStrings {
 	}
 
 	public String getValue(String key) {
-		this.queryStrings.stream()
+		return this.queryStrings.stream()
 						.filter(queryString -> queryString.exists(key))
 						.map(QueryString::getValue)
 						.findFirst()

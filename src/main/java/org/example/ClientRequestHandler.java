@@ -35,7 +35,7 @@ public class ClientRequestHandler implements Runnable {
 				QueryStrings queryStrings = httpRequest.getQueryStrings();
 
 				int operand1 = Integer.parseInt(queryStrings.getValue("operand1"));
-				Strin g operator = queryStrings.getValue("operator");
+				String operator = queryStrings.getValue("operator");
 				int operand2 = Integer.parseInt(queryStrings.getValue("operand2"));
 
 				int result = Calculator.calculate(new PositiveNumber(operand1), operator, new PositiveNumber(operand2));
